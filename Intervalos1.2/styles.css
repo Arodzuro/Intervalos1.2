@@ -1,0 +1,122 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+    margin: 0;
+    color: #e0e0e0;
+}
+
+h1 {
+    color: #e0e0e0;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #9f9f9f;
+    font-weight: 300;
+}
+
+.container {
+    text-align: center;
+    background: #2c2c2c;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 700px;
+    width: 90%;
+}
+
+button {
+    padding: 12px 24px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background: #6200ea;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+button:hover {
+    background: #7e57c2;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Botones de nivel */
+.level-selection .level-button {
+    background: #00bcd4;
+    color: #ffffff;
+}
+
+.level-selection .level-button:hover {
+    background: #0097a7;
+}
+
+/* Botones de intervalos */
+.intervals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 600px; /* Limitar el ancho máximo */
+    margin: 20px auto 0;   /* Centrar el contenedor */
+}
+
+.intervals button {
+    flex: 1 1 150px;
+    max-width: 200px;
+    background: #03DAC6;
+}
+
+.intervals button:hover {
+    background: #018786;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3700b3;
+}
+
+.controls button:hover {
+    background-color: #8854d0;
+    transform: scale(1.05);
+}
+
+/* Botón de volver */
+.back-button {
+    margin-top: 20px;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.back-button:hover {
+    background-color: #555555;
+}

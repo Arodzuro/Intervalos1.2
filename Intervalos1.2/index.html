@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenador de Oído</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Entrenador Auditivo</h1>
+        <div id="level-selection" class="level-selection">
+            <h2>Selecciona el nivel:</h2>
+            <button class="level-button" data-level="basic">Básico</button>
+            <button class="level-button" data-level="intermediate">Intermedio</button>
+            <button class="level-button" data-level="advanced">Avanzado</button>
+        </div>
+        <div id="game-interface" class="game-interface hidden">
+            <div class="controls">
+                <button id="play" onclick="playNotes()">Reproducir</button>
+                <button id="replay" onclick="playCurrentNotes()">Repetir</button>
+            </div>
+            <div class="intervals" id="intervals-container">
+            <button class="interval-button" data-interval="unisono">Unísono</button>
+            <button class="interval-button" data-interval="2da_menor">2da menor</button>
+            <button class="interval-button" data-interval="segunda_mayor">2da Mayor</button>
+            <button class="interval-button" data-interval="tercera_menor">3ra menor</button>
+            <button class="interval-button" data-interval="tercera_mayor">3ra Mayor</button>
+            <button class="interval-button" data-interval="cuarta_justa">4ta Justa</button>
+            <button class="interval-button" data-interval="cuarta_aumentada">4ta Aumentada</button>
+            <button class="interval-button" data-interval="quinta_justa">5ta Justa</button>
+            <button class="interval-button" data-interval="sexta_menor">6ta menor</button>
+            <button class="interval-button" data-interval="sexta_mayor">6ta Mayor</button>
+            <button class="interval-button" data-interval="septima_menor">7ma menor</button>
+            <button class="interval-button" data-interval="septima_mayor">7ma Mayor</button>
+            <button class="interval-button" data-interval="octava_justa">8va Justa</button>
+            </div>
+            <div id="result"></div>
+            <button id="back-to-levels" class="back-button" onclick="showLevelSelection()">← Volver a seleccionar nivel</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
