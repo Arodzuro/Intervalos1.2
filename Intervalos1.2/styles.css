@@ -3,10 +3,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
     margin: 0;
     color: #e0e0e0;
+    padding: 20px; /* Agregado para evitar que el contenido toque los bordes */
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 10px 0;
 }
 
 h1 {
@@ -35,7 +53,7 @@ h2 {
 
 button {
     padding: 12px 24px;
-    margin: 10px;
+    margin: 10px 5px; /* Ajuste de márgenes */
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -44,6 +62,9 @@ button {
     font-size: 16px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    width: 100%; /* Hacer que los botones ocupen el 100% del contenedor */
+    max-width: 300px; /* Máximo ancho para botones */
+    box-sizing: border-box;
 }
 
 button:hover {
@@ -63,7 +84,7 @@ button:hover {
 }
 
 .level-selection .level-button:hover {
-    background: #0097a7;
+    background: #0288D1;
 }
 
 /* Botones de intervalos */
@@ -72,25 +93,49 @@ button:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    max-width: 600px; /* Limitar el ancho máximo */
-    margin: 20px auto 0;   /* Centrar el contenedor */
+    margin: 20px 0;
 }
 
+/* Botones de intervalos */
 .intervals button {
-    flex: 1 1 150px;
-    max-width: 200px;
-    background: #03DAC6;
+    flex: 1 1 45%;
+    max-width: 45%;
+    margin: 5px 0;
+    background: #00bcd4 !important; /* Cambiar a un color más tenue */
+    color: #ffffff !important; /* Asegurarse de que el texto sea legible */
 }
 
 .intervals button:hover {
-    background: #018786;
+    background: #0288D1 !important; /* Color al pasar el ratón, un tono un poco más oscuro */
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .intervals button {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin: 5px 0; /* Ajuste para separar botones */
+    }
 }
 
 #result {
-    margin-top: 20px;
+    margin-top: 20px; /* Ajustar el margen superior */
+    margin-bottom: 20px; /* Ajustar el margen inferior */
     font-size: 18px;
     font-weight: bold;
     color: #e0e0e0;
+    text-align: center;
 }
 
 .controls {
@@ -102,11 +147,11 @@ button:hover {
     margin: 5px;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #3700b3;
+    background-color: #002ab3;
 }
 
 .controls button:hover {
-    background-color: #8854d0;
+    background-color: #005eda;
     transform: scale(1.05);
 }
 
@@ -119,4 +164,35 @@ button:hover {
 
 .back-button:hover {
     background-color: #555555;
+}
+
+@media (max-width: 768px) {
+    .intervals {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-items: center;
+        max-width: 100%;
+    }
+
+    .intervals button,
+    .controls button {
+        width: 100%; /* Asegura que todos los botones sean del mismo ancho */
+        max-width: 150px; /* Fija el ancho máximo de los botones */
+        margin: 5px 0; /* Espacio entre los botones */
+        max-height: 55px;
+        min-height: 55px;
+    }
+
+    .intervals button {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin: 5px 0;
+    }
+
+    .controls button {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin: 5px 0;
+    }
 }
