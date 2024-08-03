@@ -21,6 +21,26 @@ body {
     width: 100%;
     box-sizing: border-box;
 }
+/*Introducción*/
+.intro {
+    background: #333333;
+    color: #e0e0e0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    text-align:center;
+    font-size: 0.8em;
+}
+
+.intro h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1em;
+}
 
 h1, h2 {
     margin: 0;

@@ -105,12 +105,14 @@ document.querySelectorAll('.level-button').forEach(button => {
         updateIntervals(level);
         document.getElementById('level-selection').classList.add('hidden');
         document.getElementById('game-interface').classList.remove('hidden');
+        document.getElementById('intro').classList.add('hidden'); // Ocultar el mensaje de introducción
     });
 });
 
 function showLevelSelection() {
     document.getElementById('game-interface').classList.add('hidden');
     document.getElementById('level-selection').classList.remove('hidden');
+    document.getElementById('intro').classList.remove('hidden'); // Mostrar el mensaje de introducción
 }
 
 function playNotes() {
