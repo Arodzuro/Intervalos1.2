@@ -16,7 +16,7 @@ const notes = [
 ];
 
 const allIntervals = {
-    unisono: 0,
+    /*unisono: 0,*/
     segunda_menor: 1,
     segunda_mayor: 2,
     tercera_menor: 3,
@@ -32,7 +32,7 @@ const allIntervals = {
 };
 
 const intervalNames = {
-    unisono: 'Unísono',
+    /*unisono: 'Unísono',*/
     segunda_menor: '2da menor',
     segunda_mayor: '2da Mayor',
     tercera_menor: '3ra menor',
@@ -49,14 +49,14 @@ const intervalNames = {
 
 const levels = {
     basic: {
-        unisono: 0,
+        /*unisono: 0,*/
         segunda_mayor: 2,
         tercera_mayor: 4,
         cuarta_justa: 5,
         quinta_justa: 7
     },
     intermediate: {
-        unisono: 0,
+        /*unisono: 0,*/
         segunda_menor: 1,
         segunda_mayor: 2,
         tercera_menor: 3,
