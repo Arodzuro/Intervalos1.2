@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    
     <div class="container">
         <h1>Entrena tu oído</h1>
         <div id="intro" class="intro">
@@ -26,8 +27,9 @@
         </div>
         <div id="game-interface" class="game-interface hidden">
             <div class="controls">
-                <button id="play" onclick="playNotes()">Reproducir</button>
-                <button id="replay" onclick="playCurrentNotes()">Repetir</button>
+                <button id="play" onclick="playNotes()"><img src="iconos/play.png" alt="Jugar" class="icon"></button>
+                <button id="replay" onclick="playCurrentNotes()"><img src="iconos/replay.png" alt="Repetir" class="icon"></button>
+                
             </div>
             <div id="result"></div>
             <div class="intervals" id="intervals-container">

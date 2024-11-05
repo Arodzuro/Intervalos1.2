@@ -163,18 +163,30 @@ button:hover {
 }
 
 .controls button {
-    padding: 10px 20px;
+    padding: 5px 10px;
     margin: 5px;
-    border-radius: 5px;
+    border-radius: 50%;
     cursor: pointer;
-    background-color: #002ab3;
+    background-color: #003156;
+    border-color: #9f9f9f;
 }
 
 .controls button:hover {
-    background-color: #005eda;
+    background-color: #00609c;
     transform: scale(1.05);
 }
 
+#play, #replay {
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+#play img.icon, #replay img.icon{
+    width: 70%;
+    height: 70%;
+}
 /* Botón de volver */
 .back-button {
     margin-top: 20px;
@@ -216,3 +228,4 @@ button:hover {
         margin: 5px 0;
     }
 }
+
